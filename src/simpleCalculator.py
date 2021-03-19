@@ -8,7 +8,7 @@ mainWindow.title("Simple calculator")
 lastValue = StringVar()
 firstValue = 0
 lastEntry = Label(mainWindow, textvariable=lastValue)
-lastEntry.grid(row=0, column=0)
+lastEntry.grid(row=0, column=0, columnspan=4, sticky="w")
 resultEntry = Entry(mainWindow, borderwidth=5, relief="groove")
 resultEntry.grid(row=1, column=0, columnspan=4, pady=15, sticky='we')
 def buttonClick(number):
